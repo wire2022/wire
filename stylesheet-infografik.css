@@ -1,0 +1,459 @@
+/* ------------- Grundeinstellungen -----------------*/
+
+@font-face { font-family: 'Milo';
+             src: url('font/MiloOffc-Light.ttf') format('truetype'); }
+@font-face { font-family: 'Milo Medium';
+             src: url('font/MiloOffc-Medium.ttf') format('truetype'); }
+@font-face { font-family: 'Milo ScOffc';
+             src: url('font/MiloScOffc-Light.ttf') format('truetype'); }
+@font-face { font-family: 'Milo ScOffc Medium';
+             src: url('font/MiloScOffc-Medium.ttf') format('truetype'); }
+             
+body {
+    background: #fff none repeat scroll 0 0;
+    color: #fff;
+    font-family: "Milo",Verdana;
+    word-break: normal;
+    margin: 0;
+    padding: 0;   
+    height:100%; 
+}
+
+[class*="col-"] {
+    float: left;
+    /*padding: 15px;*/
+}
+
+@media only screen and (min-width: 768px) {
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-2_5 {width: 20%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 85.6%;}
+.col-12 {width: 100%;}
+}
+
+/*@media only screen and (min-width: 600px) {
+    /* For tablets: 
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-2_5 {width: 20%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}*/
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones:
+    [class*="col-"] {
+        width: 100%;
+    } */
+}
+.divider{
+padding-bottom:40px; 
+padding-top:40px;
+}
+a {
+   outline: 0;
+}
+
+
+/* ------------- Header -----------------*/
+
+.ig_body_header {
+    background: #5a145a;
+    background-position: 100% 100%;
+    overflow: hidden;
+    position: relative;
+    text-align: left;
+}
+.ig_body_header .wrapper {
+    -moz-box-align: center;
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    max-width: 1100px;
+    overflow: visible;
+}
+.ig_header_title{
+	padding-left:20px;
+}
+h1{
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 2.25em;
+}
+
+/* ------------- Main -----------------*/ 
+.ig_body_main {
+	background: #dadada;
+    background-position: 100% 100%;
+    overflow: hidden;
+    padding: 0px 5% 0px 5%;
+    position: relative;
+    text-align: left;
+}
+.ig_body_main .wrapper {
+    margin: 0 auto;
+    max-width: 1100px;
+    overflow: visible;
+}
+.content-box{
+	background: #fff;
+	padding: 15px;
+	margin:10px 15px 10px 0px;
+	color:#000;
+}
+.content-text{
+	width:50%;
+	float:left;
+	padding-top:30px;
+	text-align:right;
+	font-family: "Milo Medium",Verdana;
+}
+.content-illu{
+	float: left;
+    margin-left: 20px;
+    padding-left: 20px;
+    width: 35%;
+}
+.content-text-zwei{
+	width:40%;
+	float:left;
+	padding-top:30px;
+	text-align:left;
+	font-family: "Milo Medium",Verdana;
+}
+.content-illu-zwei{
+	float:left;
+    margin-left: 30px;
+    padding-left: 25px;
+    width: 35%;
+}
+
+.content-illu a:hover img,
+.content-illu-zwei a:hover img{
+	height:120px;
+	width:auto;
+}
+
+.legende-box-oben{
+	color:#000;
+}
+.legende-box-unten > p{
+	font-size:1em;
+}
+
+.legende-box-unten a,
+.legende-box-logo a {
+	color:#000;
+	text-decoration:none;
+}
+.legende-box-unten a:hover,
+.legende-box-logo a:hover {
+	text-decoration:underline;
+}
+
+.legende-box-unten{
+	background: #fff;
+	padding: 0px 30px 0px 20px;
+	margin:10px 15px 20px 0px;
+	color:#000;
+}
+
+.legende-box-logo{
+	background: #fff;
+	padding: 0px 30px 0px 20px;
+	margin:10px 15px 20px 0px;
+	color:#000;
+	text-align:right;
+}
+
+.footer-img{
+	padding-left:20px;
+	padding-right:10px;
+	position: relative;
+    top: 8px;
+	}
+
+
+/* -------------- Icons SVG - Mit Bild  --------------------*/
+
+.ig_grafik_planung{
+	right: 24px;
+	position:relative;
+}
+.ig_grafik_eigentum{
+	right: 23px;
+	position:relative;
+}
+
+
+/* -------------------- Pup-up -------------------------------*/
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  overflow-y: scroll;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+  z-index: 1000;
+}
+
+.popup_green {
+  margin: 40px auto;
+   padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+  background: #fff;
+  width: 70%;
+  position: relative;
+  border: 4px solid #c3c800;
+  text-align:center;
+  max-width:450px;
+}
+
+.popup_blue {
+  margin: 40px auto;
+   padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+  background: #fff;
+  width: 70%;
+  position: relative;
+  border: 4px solid #00b1eb;
+  text-align:center;
+  max-width:450px;
+}
+.popup_purple {
+  margin: 40px auto;
+   padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+  background: #fff;
+  width: 70%;
+  position: relative;
+  border: 4px solid #5a145a;
+  text-align:left;
+  max-width:450px;
+}
+
+.popup_green h2 {
+  margin-top: 0;
+  color: #c3c800;
+}
+.popup_blue h2 {
+  margin-top: 0;
+  color: #00b1eb;
+}
+.popup_purple h2 {
+  margin-top: 0;
+  color: #5a145a;
+}
+
+.content h3 {
+  margin-top: 0;
+  color: #5a145a;
+  font-size:1.2em;
+  margin-bottom: 5px;
+}
+.popup_purple a {
+  text-decoration: underline;
+  color: #c3c800;
+}
+
+.popup_green .close,
+.popup_purple .close,
+.popup_blue .close {
+  position: absolute;
+  top: -40px;
+  right: 0px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+.popup_green .close:hover {
+  color: #c3c800;
+}
+.popup_blue .close:hover {
+  color: #00b1eb;
+}
+.popup_purple .close:hover {
+  color: #5a145a;
+}
+.popup_green .content,
+.popup_blue .content{
+  max-height: 30%;
+  /*overflow: auto;*/
+  color: #000;
+  line-height: normal;
+  font-size:1.25em;
+}
+.popup_purple .content {
+  max-height: 30%;
+  /*overflow: auto;*/
+  color: #000;
+  line-height: normal;
+  font-size:1em;
+}
+
+
+
+/*-------------------- Sonderangaben für Media Queries  --------------*/
+
+@media only screen and (max-width: 1024px) {
+	.content-text, .content-text-zwei{width:40%;}
+	.content-illu, .content-illu-zwei{width:45%;}
+	.ig_header_title{padding-left:20px;}
+	h1{font-size: 2em;}
+}
+
+@media only screen and (max-width: 800px) {
+	.col-5 {width: 43%;}
+	.content-text {width:39%;}
+	.content-text-zwei {width:39%;}
+	.content-illu {width:51%; margin-left: 0px; padding-left: 17px;}
+	.content-illu-zwei {width:51%; margin-left: 0px; padding-left: 27px;}
+	.col-11 {width: 89.7%;}
+	.footer-img {padding-left: 10px; padding-right: 5px;}
+	.col-9 {width: 71%;}
+	.col-3 {width: 28%;}
+}
+
+@media only screen and (max-width: 770px) {
+	.col-5 {width: 43%;}
+	.content-text-zwei{width:38%;}
+	.content-text {width:40%;}
+	.content-illu, .content-illu-zwei{width:53%; margin-left: 10px; padding-left: 10px;}
+	.ig_header_title{padding-left:35px;}
+	h1{font-size: 1.8em;}
+	.col-11 {width: 90%;}
+	.col-3 {width: 29%;}
+}
+
+@media only screen and (max-width: 740px) {
+	.col-5 {width: 43%;}
+	.col-5-logo {width: 90%;}
+	.content-text-zwei{width:35%; padding-top:20px;}
+	.content-text {width:35%;}
+	.content-illu, .content-illu-zwei{width:55%; margin-left: 10px; padding-left: 10px;}
+	.ig_header_title{padding-left:35px;}
+	h1{font-size: 1.7em;}
+	.col-11 {width: 90%;}
+}
+@media only screen and (min-width: 740px) {
+	.legende-box-oben{display:none;}
+	.legende-box-logo{display:none;}
+}
+
+@media only screen and (max-width: 739px) {
+	.legende-box-unten{display:none;}
+}
+
+@media only screen and (max-width: 670px) {
+	.col-5 {width: 96%;}
+	.col-5-logo {width: 92.5%;}
+	.content-box{padding: 1 px; margin:10px 10px 10px 0px;}
+	.content-text-zwei{width:31%; padding-top:20px;}
+	.content-text {width:45%;}
+	.content-illu{width:45%; margin-left: 30px; padding-left: 20px;}
+	.content-illu-zwei{width:33%; margin-left: 118px; padding-left: 20px;}
+	.ig_header_title{padding-left:35px;}
+	h1{font-size: 1.5em;}
+}
+
+@media only screen and (max-width: 640px) {
+	.content-illu-zwei{width:35%; margin-left: 90px; padding-left: 20px;}
+	.content-text-zwei{width:40%; padding-top:20px;}
+}
+
+@media only screen and (max-width: 600px) {
+	.col-5 {width: 95%;}
+	.col-5-logo {width: 91%;}
+	.content-text-zwei{width:45%;}
+	.content-text {width:50%;}
+	.content-illu {width:35%; margin-left: 30px; padding-left: 20px;}
+	.content-illu-zwei{width:45%; margin-left: 20px; padding-left: 20px;}
+	.ig_header_title{padding-left:35px;}
+	h1{font-size: 1.5em;}
+	.popup_green .content, .popup_blue .content {font-size:1.1em;}
+}
+
+@media only screen and (max-width: 599px) {
+	.content-text {width: 42%;}
+	.content-illu-zwei{width:39%; margin-left: 77px; padding-left: 20px;}
+	.content-text-zwei{width:40%; padding-top:20px;}
+}
+
+@media only screen and (max-width: 540px) {
+	.content-illu-zwei{width:39%; margin-left: 67px; padding-left: 20px;}
+}
+
+@media only screen and (max-width: 480px) {
+	.content-text {width:40%;}
+	.content-text-zwei {width:40%;}
+	.content-illu {width:38%; margin-left: 20px; padding-left: 20px;}
+	.content-illu-zwei {width:43%; margin-left: 45px; padding-left: 20px;}
+}
+
+@media only screen and (max-width: 415px) {
+	.col-5 {width: 98%;}
+	.col-5-logo {width: 84%;}
+	.content-box{padding: 5px 5px 5px 5px; margin:10px 10px 10px 0px;}
+	.content-text-zwei{width:40%;}
+	.content-text {width:38%;}
+	.content-illu {width:54%; margin-left: 10px; padding-left: 10px;}
+	.content-illu-zwei{width:50%; margin-left: 25px; padding-left: 2px;}
+	.ig_header_title{padding-left:20px;}
+	h1{font-size: 1.5em;}
+	h2{ font-size: 1.3em}
+	.popup_green .content, .popup_blue .content {font-size:1em;}
+}
+
+@media only screen and (max-width: 350px) {
+	.content-illu-zwei {margin-left: 20px; width: 54%;}
+	.content-text-zwei {width: 37%;}
+}
+
+@media only screen and (max-width: 320px) {
+	.col-5 {width: 98%;}
+	.col-5-logo {width: 83%;}
+	.content-box{padding: 5px 5px 5px 5px; margin:10px 10px 10px 0px;}
+	.content-text-zwei{width:33%;}
+	.content-text {width:37%;}
+	.content-illu {width:57%; margin-left: 11px; padding-left: 5px;}
+	.content-illu-zwei{width:57%; margin-left: 5px; padding-left: 2px;}
+	.ig_header_title{padding-left:20px;}
+	h1{font-size: 1.5em;}
+	h2{ font-size: 1.2em}
+}
+
+
